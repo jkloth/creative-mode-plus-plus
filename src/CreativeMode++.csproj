@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6ADF6FCE-CE8E-4867-94C8-311E15997790}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CreativeModePlus</RootNamespace>
+    <AssemblyName>Creative Mode+</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>CreativeModePlus\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>http://code.google.com/p/creative-mode-plus/downloads/</UpdateUrl>
+    <SupportUrl>http://code.google.com/p/creative-mode-plus/</SupportUrl>
+    <ProductName>Creative Mode Plus</ProductName>
+    <PublisherName>MyPace</PublisherName>
+    <SuiteName>Creative Mode Plus</SuiteName>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.1.3.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>res\Minecraft-Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>D24E1F22C81B353C38AF38D1E5DC595134319BF8</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Substrate, Version=1.3.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Substrate.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddData.Designer.cs">
+      <DependentUpon>AddData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asm.cs" />
+    <Compile Include="BlockColor.cs" />
+    <Compile Include="BlockNames.cs" />
+    <Compile Include="ComboBoxItem.cs" />
+    <Compile Include="ComboBoxWithIcons.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LoadSave.cs" />
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RunThread.cs" />
+    <Compile Include="SelectRegion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectRegion.Designer.cs">
+      <DependentUpon>SelectRegion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="Tool.cs" />
+    <Compile Include="Tools.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools.Designer.cs">
+      <DependentUpon>Tools.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Undo.cs" />
+    <Compile Include="ElemUndo.cs" />
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddData.resx">
+      <DependentUpon>AddData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Tools.resx">
+      <DependentUpon>Tools.cs</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="CMPHelp.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="res\brush\Fill_btn.png" />
+    <EmbeddedResource Include="res\brush\MoveSelect_btn.png" />
+    <EmbeddedResource Include="res\brush\Paint_btn.png" />
+    <EmbeddedResource Include="res\brush\Pencil_btn.png" />
+    <EmbeddedResource Include="res\brush\Select_btn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SelectRegion.resx">
+      <DependentUpon>SelectRegion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="res\Minecraft-Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="res\block-icons\0.png" />
+    <EmbeddedResource Include="res\block-icons\1.png" />
+    <EmbeddedResource Include="res\block-icons\10.png" />
+    <EmbeddedResource Include="res\block-icons\100.png" />
+    <EmbeddedResource Include="res\block-icons\101.png" />
+    <EmbeddedResource Include="res\block-icons\102.png" />
+    <EmbeddedResource Include="res\block-icons\103.png" />
+    <EmbeddedResource Include="res\block-icons\104.png" />
+    <EmbeddedResource Include="res\block-icons\105.png" />
+    <EmbeddedResource Include="res\block-icons\106.png" />
+    <EmbeddedResource Include="res\block-icons\107.png" />
+    <EmbeddedResource Include="res\block-icons\108.png" />
+    <EmbeddedResource Include="res\block-icons\109.png" />
+    <EmbeddedResource Include="res\block-icons\11.png" />
+    <EmbeddedResource Include="res\block-icons\110.png" />
+    <EmbeddedResource Include="res\block-icons\111.png" />
+    <EmbeddedResource Include="res\block-icons\112.png" />
+    <EmbeddedResource Include="res\block-icons\113.png" />
+    <EmbeddedResource Include="res\block-icons\114.png" />
+    <EmbeddedResource Include="res\block-icons\115.png" />
+    <EmbeddedResource Include="res\block-icons\116.png" />
+    <EmbeddedResource Include="res\block-icons\117.png" />
+    <EmbeddedResource Include="res\block-icons\118.png" />
+    <EmbeddedResource Include="res\block-icons\119.png" />
+    <EmbeddedResource Include="res\block-icons\12.png" />
+    <EmbeddedResource Include="res\block-icons\120.png" />
+    <EmbeddedResource Include="res\block-icons\121.png" />
+    <EmbeddedResource Include="res\block-icons\122.png" />
+    <EmbeddedResource Include="res\block-icons\123.png" />
+    <EmbeddedResource Include="res\block-icons\124.png" />
+    <EmbeddedResource Include="res\block-icons\125.png" />
+    <EmbeddedResource Include="res\block-icons\126.png" />
+    <EmbeddedResource Include="res\block-icons\127.png" />
+    <EmbeddedResource Include="res\block-icons\128.png" />
+    <EmbeddedResource Include="res\block-icons\129.png" />
+    <EmbeddedResource Include="res\block-icons\13.png" />
+    <EmbeddedResource Include="res\block-icons\130.png" />
+    <EmbeddedResource Include="res\block-icons\131.png" />
+    <EmbeddedResource Include="res\block-icons\132.png" />
+    <EmbeddedResource Include="res\block-icons\133.png" />
+    <EmbeddedResource Include="res\block-icons\134.png" />
+    <EmbeddedResource Include="res\block-icons\135.png" />
+    <EmbeddedResource Include="res\block-icons\136.png" />
+    <EmbeddedResource Include="res\block-icons\14.png" />
+    <EmbeddedResource Include="res\block-icons\15.png" />
+    <EmbeddedResource Include="res\block-icons\16.png" />
+    <EmbeddedResource Include="res\block-icons\17.png" />
+    <EmbeddedResource Include="res\block-icons\18.png" />
+    <EmbeddedResource Include="res\block-icons\19.png" />
+    <EmbeddedResource Include="res\block-icons\2.png" />
+    <EmbeddedResource Include="res\block-icons\20.png" />
+    <EmbeddedResource Include="res\block-icons\21.png" />
+    <EmbeddedResource Include="res\block-icons\22.png" />
+    <EmbeddedResource Include="res\block-icons\23.png" />
+    <EmbeddedResource Include="res\block-icons\24.png" />
+    <EmbeddedResource Include="res\block-icons\25.png" />
+    <EmbeddedResource Include="res\block-icons\26.png" />
+    <EmbeddedResource Include="res\block-icons\27.png" />
+    <EmbeddedResource Include="res\block-icons\28.png" />
+    <EmbeddedResource Include="res\block-icons\29.png" />
+    <EmbeddedResource Include="res\block-icons\3.png" />
+    <EmbeddedResource Include="res\block-icons\30.png" />
+    <EmbeddedResource Include="res\block-icons\31.png" />
+    <EmbeddedResource Include="res\block-icons\32.png" />
+    <EmbeddedResource Include="res\block-icons\33.png" />
+    <EmbeddedResource Include="res\block-icons\35.png" />
+    <EmbeddedResource Include="res\block-icons\37.png" />
+    <EmbeddedResource Include="res\block-icons\38.png" />
+    <EmbeddedResource Include="res\block-icons\39.png" />
+    <EmbeddedResource Include="res\block-icons\4.png" />
+    <EmbeddedResource Include="res\block-icons\40.png" />
+    <EmbeddedResource Include="res\block-icons\41.png" />
+    <EmbeddedResource Include="res\block-icons\42.png" />
+    <EmbeddedResource Include="res\block-icons\43.png" />
+    <EmbeddedResource Include="res\block-icons\44.png" />
+    <EmbeddedResource Include="res\block-icons\45.png" />
+    <EmbeddedResource Include="res\block-icons\46.png" />
+    <EmbeddedResource Include="res\block-icons\47.png" />
+    <EmbeddedResource Include="res\block-icons\48.png" />
+    <EmbeddedResource Include="res\block-icons\49.png" />
+    <EmbeddedResource Include="res\block-icons\5.png" />
+    <EmbeddedResource Include="res\block-icons\50.png" />
+    <EmbeddedResource Include="res\block-icons\51.png" />
+    <EmbeddedResource Include="res\block-icons\52.png" />
+    <EmbeddedResource Include="res\block-icons\53.png" />
+    <EmbeddedResource Include="res\block-icons\54.png" />
+    <EmbeddedResource Include="res\block-icons\55.png" />
+    <EmbeddedResource Include="res\block-icons\56.png" />
+    <EmbeddedResource Include="res\block-icons\57.png" />
+    <EmbeddedResource Include="res\block-icons\58.png" />
+    <EmbeddedResource Include="res\block-icons\59.png" />
+    <EmbeddedResource Include="res\block-icons\6.png" />
+    <EmbeddedResource Include="res\block-icons\60.png" />
+    <EmbeddedResource Include="res\block-icons\61.png" />
+    <EmbeddedResource Include="res\block-icons\62.png" />
+    <EmbeddedResource Include="res\block-icons\63.png" />
+    <EmbeddedResource Include="res\block-icons\64.png" />
+    <EmbeddedResource Include="res\block-icons\65.png" />
+    <EmbeddedResource Include="res\block-icons\66.png" />
+    <EmbeddedResource Include="res\block-icons\67.png" />
+    <EmbeddedResource Include="res\block-icons\68.png" />
+    <EmbeddedResource Include="res\block-icons\69.png" />
+    <EmbeddedResource Include="res\block-icons\7.png" />
+    <EmbeddedResource Include="res\block-icons\70.png" />
+    <EmbeddedResource Include="res\block-icons\71.png" />
+    <EmbeddedResource Include="res\block-icons\72.png" />
+    <EmbeddedResource Include="res\block-icons\73.png" />
+    <EmbeddedResource Include="res\block-icons\74.png" />
+    <EmbeddedResource Include="res\block-icons\75.png" />
+    <EmbeddedResource Include="res\block-icons\76.png" />
+    <EmbeddedResource Include="res\block-icons\77.png" />
+    <EmbeddedResource Include="res\block-icons\78.png" />
+    <EmbeddedResource Include="res\block-icons\79.png" />
+    <EmbeddedResource Include="res\block-icons\8.png" />
+    <EmbeddedResource Include="res\block-icons\80.png" />
+    <EmbeddedResource Include="res\block-icons\81.png" />
+    <EmbeddedResource Include="res\block-icons\82.png" />
+    <EmbeddedResource Include="res\block-icons\83.png" />
+    <EmbeddedResource Include="res\block-icons\84.png" />
+    <EmbeddedResource Include="res\block-icons\85.png" />
+    <EmbeddedResource Include="res\block-icons\86.png" />
+    <EmbeddedResource Include="res\block-icons\87.png" />
+    <EmbeddedResource Include="res\block-icons\88.png" />
+    <EmbeddedResource Include="res\block-icons\89.png" />
+    <EmbeddedResource Include="res\block-icons\9.png" />
+    <EmbeddedResource Include="res\block-icons\90.png" />
+    <EmbeddedResource Include="res\block-icons\91.png" />
+    <EmbeddedResource Include="res\block-icons\92.png" />
+    <EmbeddedResource Include="res\block-icons\93.png" />
+    <EmbeddedResource Include="res\block-icons\94.png" />
+    <EmbeddedResource Include="res\block-icons\96.png" />
+    <EmbeddedResource Include="res\block-icons\97.png" />
+    <EmbeddedResource Include="res\block-icons\98.png" />
+    <EmbeddedResource Include="res\block-icons\99.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="res\block-icons\rails\0.png" />
+    <EmbeddedResource Include="res\block-icons\rails\1.png" />
+    <EmbeddedResource Include="res\block-icons\rails\2.png" />
+    <EmbeddedResource Include="res\block-icons\rails\3.png" />
+    <EmbeddedResource Include="res\block-icons\rails\4.png" />
+    <EmbeddedResource Include="res\block-icons\rails\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="res\brush\General.png" />
+    <EmbeddedResource Include="res\brush\MoveSelect.png" />
+    <EmbeddedResource Include="res\brush\Pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="res\brush\size\10x10.png" />
+    <EmbeddedResource Include="res\brush\size\11x11.png" />
+    <EmbeddedResource Include="res\brush\size\12x12.png" />
+    <EmbeddedResource Include="res\brush\size\13x13.png" />
+    <EmbeddedResource Include="res\brush\size\14x14.png" />
+    <EmbeddedResource Include="res\brush\size\15x15.png" />
+    <EmbeddedResource Include="res\brush\size\16x16.png" />
+    <EmbeddedResource Include="res\brush\size\17x17.png" />
+    <EmbeddedResource Include="res\brush\size\18x18.png" />
+    <EmbeddedResource Include="res\brush\size\19x19.png" />
+    <EmbeddedResource Include="res\brush\size\1x1.png" />
+    <EmbeddedResource Include="res\brush\size\20x20.png" />
+    <EmbeddedResource Include="res\brush\size\21x21.png" />
+    <EmbeddedResource Include="res\brush\size\22x22.png" />
+    <EmbeddedResource Include="res\brush\size\23x23.png" />
+    <EmbeddedResource Include="res\brush\size\24x24.png" />
+    <EmbeddedResource Include="res\brush\size\25x25.png" />
+    <EmbeddedResource Include="res\brush\size\26x26.png" />
+    <EmbeddedResource Include="res\brush\size\27x27.png" />
+    <EmbeddedResource Include="res\brush\size\28x28.png" />
+    <EmbeddedResource Include="res\brush\size\29x29.png" />
+    <EmbeddedResource Include="res\brush\size\2x2.png" />
+    <EmbeddedResource Include="res\brush\size\30x30.png" />
+    <EmbeddedResource Include="res\brush\size\31x31.png" />
+    <EmbeddedResource Include="res\brush\size\32x32.png" />
+    <EmbeddedResource Include="res\brush\size\3x3.png" />
+    <EmbeddedResource Include="res\brush\size\4x4.png" />
+    <EmbeddedResource Include="res\brush\size\5x5.png" />
+    <EmbeddedResource Include="res\brush\size\6x6.png" />
+    <EmbeddedResource Include="res\brush\size\7x7.png" />
+    <EmbeddedResource Include="res\brush\size\8x8.png" />
+    <EmbeddedResource Include="res\brush\size\9x9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="res\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CMP.OSL-License.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="res\block-icons\137.png" />
+    <EmbeddedResource Include="res\block-icons\138.png" />
+    <EmbeddedResource Include="res\block-icons\139.png" />
+    <EmbeddedResource Include="res\block-icons\140.png" />
+    <EmbeddedResource Include="res\block-icons\141.png" />
+    <EmbeddedResource Include="res\block-icons\142.png" />
+    <EmbeddedResource Include="res\block-icons\143.png" />
+    <EmbeddedResource Include="res\block-icons\144.png" />
+    <EmbeddedResource Include="res\block-icons\145.png" />
+    <Content Include="Substrate.License.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Substrate.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
